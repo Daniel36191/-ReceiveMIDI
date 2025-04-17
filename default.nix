@@ -8,7 +8,7 @@ stdenv.mkDerivation rec {
     owner = "gbevin";
     repo = pname;
     rev = "1.4.4"; # Use the tag name without 'v'
-    sha256 = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";  # Replace with actual hash
+    sha256 = "BIl2KON5I5hDWZJb0wrm25lCuX+/zJF/34SKnUrvcqU=";  # Replace with actual hash
   };
 
   buildInputs = [ stdenv.cc alsa-lib pkg-config ];
