@@ -13,6 +13,10 @@ stdenv.mkDerivation rec {
 
   buildInputs = [ stdenv.cc alsa-lib pkg-config ];
 
+  configurePhase = ''
+    ls -al
+  '';
+
   makeFlags = [
     "-C"
     "Builds/LinuxMakefile"
