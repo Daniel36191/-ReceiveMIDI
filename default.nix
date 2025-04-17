@@ -13,13 +13,6 @@ stdenv.mkDerivation rec {
 
   buildInputs = [ stdenv.cc alsa-lib pkg-config ];
 
-  configurePhase = ''
-    ls -al
-  '';
-    buildPhase = ''
-        ls -al
-    '';
-
   makeFlags = [
     "-C"
     "Builds/LinuxMakefile"
@@ -27,7 +20,6 @@ stdenv.mkDerivation rec {
   ];
 
   installPhase = ''
-  ls -al
     mkdir -p $out/bin
     cp Builds/LinuxMakefile/build/${pname} $out/bin/${pname}
     chmod +x $out/bin/${pname}
