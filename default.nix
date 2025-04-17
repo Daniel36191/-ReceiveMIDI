@@ -16,6 +16,9 @@ stdenv.mkDerivation rec {
   configurePhase = ''
     ls -al
   '';
+    buildPhase = ''
+        ls -al
+    '';
 
   makeFlags = [
     "-C"
